@@ -47,7 +47,7 @@ var tabUpdateCallback = function(tabId, changeInfo, tab) {
         var url = getUrlWithoutHash(changeInfo.url);
 
         chrome.storage.local.get('html', function(result) {
-            var htmlObj = result.html;
+            var htmlObj = result.html ? result.html : {};
             chrome.tabs.getSelected(null, function(tab) {
                 var newHtmlObj = updateHtmlObj(tab, htmlObj, url, fullUrl, hash);
                 chrome.storage.local.set({'html': newHtmlObj});

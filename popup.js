@@ -1,7 +1,9 @@
 $(document).ready(function(){
     chrome.storage.local.get('html', function(result) {
-        var htmlObj = result.html;
-        render(htmlObj);
+        if (result && result.html) {
+            var htmlObj = result.html;
+            render(htmlObj);
+        }
     });
 });
 
