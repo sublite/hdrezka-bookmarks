@@ -1,0 +1,25 @@
+body {
+    width: 400px;
+}
+.content {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.serial {
+    margin-top: 11px;
+}
+.serial a {
+    text-decoration: none;
+    color: black;
+}
+.serial .serial-title:hover {
+    border-bottom: 1px dotted #000;
+}
+.serial-del-btn {
+    margin-left:30px;
+}
+.popup-title {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
