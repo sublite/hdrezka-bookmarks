@@ -38,7 +38,7 @@ var updateHtmlObj = function(tab, htmlObj, url, fullUrl, hash) {
 };
 
 var tabUpdateCallback = function(tabId, changeInfo, tab) {
-    if (changeInfo.url.indexOf('hdrezka') === -1) return false;
+    if (changeInfo.url.indexOf('hdrezka.me') === -1) return false;
 
     // second condition - we wait while a user select any episod in the player
     if (changeInfo.status === 'loading' && (changeInfo.url).indexOf('s:') > -1) {
